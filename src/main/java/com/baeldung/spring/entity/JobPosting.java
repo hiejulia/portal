@@ -1,21 +1,12 @@
 package com.baeldung.spring.entity;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
 
-/**
- * @author amayd
- *
- */
+
 @Entity
-@Table(name = "jobposting")
+@Table(name = "jobposting", indexes = {
+		@Index(columnList = "title", name = "title_job_posting_idx")
+})
 public class JobPosting {
 
 	@Id

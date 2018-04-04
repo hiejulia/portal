@@ -40,6 +40,7 @@ Type http://localhost:8080/findjobs in your browser to open the application.
         + Batch insert, update , delete 
         + Periodically flush and clear the Hibernate session
         + Lazy init(loading)
+        + Indexing 
 
 
 + Spring MVC 

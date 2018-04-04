@@ -28,7 +28,7 @@ public class JobApplicationDaoImpl implements JobApplicationDao {
 		try {
 			JobSeeker js = entityManager.find(JobSeeker.class, jobseekerId);// find jobseeker
 			JobPosting jp = entityManager.find(JobPosting.class, jobId);// find jobposting
-			ja.setJobPosting(jp);
+//			ja.setJobPosting(jp);
 			ja.setJobSeeker(js);
 			ja.setResume(resumeFlag);
 			if (!resumePath.equals(null)) {
