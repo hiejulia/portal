@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35690b60-8bce-4b13-b8ea-752140b795f7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/baeldung/spring/validator/JobPostingValidator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/baeldung/spring/validator/JobSeekerValidator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/baeldung/spring/dao/impl/JobSearchDaoImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/baeldung/spring/dao/impl/AdminDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/baeldung/spring/dao/impl/AdminDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/baeldung/spring/dao/impl/JobApplicationDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/baeldung/spring/dao/impl/JobApplicationDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/baeldung/spring/controller/JobSeekerController.java" afterPath="$PROJECT_DIR$/src/main/java/com/baeldung/spring/controller/JobSeekerController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,8 +30,8 @@
       <file leaf-file-name="AdminDaoImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/dao/impl/AdminDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="95" column="25" lean-forward="true" selection-start-line="95" selection-start-column="25" selection-end-line="95" selection-end-column="25" />
+            <state relative-caret-position="300">
+              <caret line="20" column="42" lean-forward="true" selection-start-line="19" selection-start-column="2" selection-end-line="20" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -71,15 +69,49 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JobSeekerValidator.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JobSeekerValidator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/validator/JobSeekerValidator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="36" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+            <state relative-caret-position="180">
+              <caret line="12" column="54" lean-forward="true" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#343#344#0" expanded="true" />
                 <element signature="e#396#397#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JobSeekerController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/controller/JobSeekerController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="137">
+              <caret line="53" column="35" lean-forward="true" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
+              <folding>
+                <element signature="e#1672#1673#0" expanded="true" />
+                <element signature="e#1711#1712#0" expanded="true" />
+                <element signature="e#6216#6232#0" expanded="true" />
+                <element signature="e#6281#6297#0" expanded="true" />
+                <element signature="e#6715#6731#0" expanded="true" />
+                <element signature="e#6780#6796#0" expanded="true" />
+                <element signature="e#11779#11795#0" expanded="true" />
+                <element signature="e#11844#11860#0" expanded="true" />
+                <element signature="e#14471#14487#0" expanded="true" />
+                <element signature="e#14536#14552#0" expanded="true" />
+                <element signature="e#15858#15867#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JobSearchDaoImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/dao/impl/JobSearchDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="21" column="53" lean-forward="true" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -95,16 +127,6 @@
                 <element signature="e#403#404#0" expanded="true" />
                 <element signature="e#457#458#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SearchController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/controller/SearchController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -165,7 +187,6 @@
         <option value="$PROJECT_DIR$/README 2.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/baeldung/spring/entity/JobApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/baeldung/spring/dao/impl/FileDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/baeldung/spring/controller/JobSeekerController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/baeldung/spring/dao/AbstractDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/baeldung/spring/entity/NotificationLog.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/baeldung/spring/entity/JobSeeker.java" />
@@ -188,6 +209,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/baeldung/spring/validator/CompanyValidator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/baeldung/spring/validator/JobPostingValidator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/baeldung/spring/validator/JobSeekerValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baeldung/spring/controller/JobSeekerController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baeldung/spring/dao/impl/JobSearchDaoImpl.java" />
       </list>
     </option>
   </component>
@@ -445,12 +468,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1522867135081</updated>
-      <workItem from="1522867137949" duration="4814000" />
+      <workItem from="1522867137949" duration="5104000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4814000" />
+    <option name="totallyTimeSpent" value="5104000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1024" y="23" width="1280" height="773" extended-state="6" />
@@ -603,24 +626,6 @@
         <state relative-caret-position="30">
           <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/controller/JobSeekerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6238">
-          <caret line="67" column="20" lean-forward="false" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
-          <folding>
-            <element signature="e#6087#6103#0" expanded="true" />
-            <element signature="e#6152#6168#0" expanded="true" />
-            <element signature="e#6586#6602#0" expanded="true" />
-            <element signature="e#6651#6667#0" expanded="true" />
-            <element signature="e#11650#11666#0" expanded="true" />
-            <element signature="e#11715#11731#0" expanded="true" />
-            <element signature="e#14342#14358#0" expanded="true" />
-            <element signature="e#14407#14423#0" expanded="true" />
-            <element signature="e#15729#15738#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -810,16 +815,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/dao/impl/AdminDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="95" column="25" lean-forward="true" selection-start-line="95" selection-start-column="25" selection-end-line="95" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/dao/impl/JobApplicationDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -858,12 +853,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/validator/JobSeekerValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="36" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+        <state relative-caret-position="180">
+          <caret line="12" column="54" lean-forward="true" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#343#344#0" expanded="true" />
             <element signature="e#396#397#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/controller/JobSeekerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="53" column="35" lean-forward="true" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
+          <folding>
+            <element signature="e#1672#1673#0" expanded="true" />
+            <element signature="e#1711#1712#0" expanded="true" />
+            <element signature="e#6216#6232#0" expanded="true" />
+            <element signature="e#6281#6297#0" expanded="true" />
+            <element signature="e#6715#6731#0" expanded="true" />
+            <element signature="e#6780#6796#0" expanded="true" />
+            <element signature="e#11779#11795#0" expanded="true" />
+            <element signature="e#11844#11860#0" expanded="true" />
+            <element signature="e#14471#14487#0" expanded="true" />
+            <element signature="e#14536#14552#0" expanded="true" />
+            <element signature="e#15858#15867#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/dao/impl/AdminDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="42" lean-forward="true" selection-start-line="19" selection-start-column="2" selection-end-line="20" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/dao/impl/JobSearchDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="21" column="53" lean-forward="true" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

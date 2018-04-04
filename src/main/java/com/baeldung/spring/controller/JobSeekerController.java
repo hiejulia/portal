@@ -15,17 +15,17 @@ import java.util.Optional;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
+import com.baeldung.spring.validator.JobSeekerValidator;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.*;
 
 import com.baeldung.spring.dao.CompanyDao;
 import com.baeldung.spring.dao.InterestedDao;
@@ -48,6 +48,15 @@ import com.baeldung.spring.mail.EmailServiceImpl;
 
 @RequestMapping(value = "/")
 public class JobSeekerController {
+
+	// add validator
+
+	JobSeekerValidator jsvalidator;
+
+	@InitBinder
+	private void initBinder(WebDataBinder binder) {
+		binder.setValidator(jsvalidator);
+	}
 
 	@Autowired
 	JobSeekerDao jobSeekerDao;
