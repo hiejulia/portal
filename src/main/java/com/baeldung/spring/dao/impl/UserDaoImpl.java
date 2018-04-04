@@ -23,4 +23,5 @@ public class UserDaoImpl extends AbstractDao<Integer, JobSeeker> implements User
 	private EntityManager entityManager;
 
 
+
 }
