@@ -5,18 +5,7 @@ package com.baeldung.spring.entity;
 
 import java.util.List;
 
-import javax.persistence.Basic;
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
@@ -43,6 +32,7 @@ public class JobSeeker {
 	private String emailId;
 
 	@Column(name = "password")
+	@Transient
 	private String password;
 
 	@Column(name = "workEx")
@@ -69,6 +59,7 @@ public class JobSeeker {
 
 	// job app list
 	@OneToMany(mappedBy="jobSeeker", cascade = CascadeType.ALL)
+	@OrderBy("id desc")
 	@JsonIdentityInfo(generator=ObjectIdGenerators.IntSequenceGenerator.class, property="appId")
 	private List<JobApplication> jobApplicationList;
 	
