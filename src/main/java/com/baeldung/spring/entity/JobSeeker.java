@@ -3,6 +3,7 @@
  */
 package com.baeldung.spring.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.*;
@@ -62,6 +63,11 @@ public class JobSeeker {
 	@OrderBy("id desc")
 	@JsonIdentityInfo(generator=ObjectIdGenerators.IntSequenceGenerator.class, property="appId")
 	private List<JobApplication> jobApplicationList;
+
+	// NotificationLog
+	@OneToMany(mappedBy="user")
+	private List<NotificationLog> notificationLogs = new ArrayList<>();
+
 	
 
 

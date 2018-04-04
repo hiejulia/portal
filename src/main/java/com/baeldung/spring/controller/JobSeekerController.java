@@ -508,8 +508,8 @@ public class JobSeekerController {
 		List<Integer> jobIdList = new ArrayList<Integer>();
 		for (Iterator iterator = jobSeekerAppliedList.iterator(); iterator.hasNext();) {
 			JobApplication ja = (JobApplication) iterator.next();
-			int jobId = ja.getJobPosting().getJobId();
-			jobIdList.add(jobId);
+//			int jobId = ja.getJobPosting().getJobId();
+//			jobIdList.add(jobId);
 		}
 		return jobIdList;
 	}

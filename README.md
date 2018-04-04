@@ -1,6 +1,8 @@
 ## Spring Job Portal
 
-Job portal for job seekers and companies, developed in Spring and Hibernate.
+Job portal for job seekers and companies. The purpose of this project is to create a channel of communication between employers and future prospective employees. Through 
+this platform, companies and organisation who are looking for future talents can post ads for open job positions. Then job seeker who are interested in these position can apply . Employers
+will be able to see the submitted resumes and then providing the criteria the application will evaluate and recommend which candidate is suitable
 
 
 ## Stack 
