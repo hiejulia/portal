@@ -61,6 +61,7 @@ public class JobApplication {
 	@OrderBy("year desc")
 	private List<Degree> degrees;
 
+	// cv
 	@OneToOne
 	private File cv;
 
