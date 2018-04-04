@@ -62,4 +62,6 @@ public interface JobSeekerDao {
 	 * @return userId
 	 */
 	public List<Integer> getUserIdFromEmail(String emailid);
+
+	// get list of job seeker in paging(optimize the sql query )
 }
