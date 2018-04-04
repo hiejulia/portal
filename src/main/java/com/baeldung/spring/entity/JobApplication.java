@@ -3,27 +3,19 @@
  */
 package com.baeldung.spring.entity;
 import java.sql.Date;
+import java.util.List;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+import lombok.Data;
 
-/**
- * @author amayd
- *
- */
+
 @Entity
 @Table(name = "jobapplication")
+@Data
 public class JobApplication {
 
 	@Id
@@ -62,121 +54,31 @@ public class JobApplication {
 	@Column(name="interviewAccepted")
 	private boolean interviewAccepted;
 
-	/**
-	 * @return Application ID
-	 */
-	public int getAppId() {
-		return appId;
-	}
+	// update degree of the applicant
+	@ElementCollection
+	@CollectionTable(name = "application_degrees",
+			joinColumns = @JoinColumn(name = "job_application_id") )
+	@OrderBy("year desc")
+	private List<Degree> degrees;
 
-	/**
-	 * @param appId
-	 */
-	public void setAppId(int appId) {
-		this.appId = appId;
-	}
+	@OneToOne
+	private File cv;
 
-	/**
-	 * @return Job Posting
-	 */
-	public JobPosting getJobPosting() {
-		return jobposting;
-	}
+	@OneToOne
+	@JoinColumn(name = "research_statement_id")
+	private File researchStatement;
 
-	/**
-	 * @param jobPosting
-	 */
-	public void setJobPosting(JobPosting jobPosting) {
-		this.jobposting = jobPosting;
-	}
 
-	/**
-	 * @return JobSeeker
-	 */
-	@JsonProperty
-	public JobSeeker getJobSeeker() {
-		return jobSeeker;
-	}
+	@OneToOne
+	@JoinColumn(name = "teaching_statement_id")
+	private File teachingStatement;
 
-	/**
-	 * @param jobSeeker
-	 */
-	public void setJobSeeker(JobSeeker jobSeeker) {
-		this.jobSeeker = jobSeeker;
-	}
 
-	/**
-	 * @return True if applied through resume
-	 */
-	public boolean isResume() {
-		return resume;
-	}
+	@OneToMany(mappedBy = "job_application",
+			cascade = { CascadeType.MERGE, CascadeType.PERSIST })
+	@OrderColumn(name = "round_index")
+	private List<Round> rounds;
 
-	/**
-	 * @param resume
-	 */
-	public void setResume(boolean resume) {
-		this.resume = resume;
-	}
 
-	/**
-	 * @return Resume path
-	 */
-	public String getResumePath() {
-		return resumePath;
-	}
-
-	/**
-	 * @param resumePath
-	 */
-	public void setResumePath(String resumePath) {
-		this.resumePath = resumePath;
-	}
-
-	/**
-	 * @return State of the application
-	 */
-	public int getState() {
-		return state;
-	}
-
-	/**
-	 * @param state
-	 */
-	public void setState(int state) {
-		this.state = state;
-	}
-
-	public boolean isInterviewFlag() {
-		return interviewFlag;
-	}
-
-	public void setInterviewFlag(boolean interviewFlag) {
-		this.interviewFlag = interviewFlag;
-	}
-
-	public String getInterviewLocation() {
-		return interviewLocation;
-	}
-
-	public void setInterviewLocation(String interviewLocation) {
-		this.interviewLocation = interviewLocation;
-	}
-
-	public Date getInterviewTime() {
-		return interviewTime;
-	}
-
-	public void setInterviewTime(Date interviewTime) {
-		this.interviewTime = interviewTime;
-	}
-
-	public boolean isInterviewAccepted() {
-		return interviewAccepted;
-	}
-
-	public void setInterviewAccepted(boolean interviewAccepted) {
-		this.interviewAccepted = interviewAccepted;
-	}
 
 }
