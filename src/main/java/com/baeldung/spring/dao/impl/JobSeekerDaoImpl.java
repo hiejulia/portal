@@ -29,6 +29,7 @@ public class JobSeekerDaoImpl implements JobSeekerDao {
 	@PersistenceContext
 	private EntityManager entityManager;
 
+
 	/*
 	 * (non-Javadoc)
 	 * 
@@ -212,6 +213,8 @@ public class JobSeekerDaoImpl implements JobSeekerDao {
 		}
 		return list;
 	}
+
+	//delete job seeker
 
 
 
