@@ -36,6 +36,8 @@ public class JobApplicationDaoImpl implements JobApplicationDao {
 			}
 			ja.setState(0);
 			entityManager.persist(ja);// persiste :post posting
+			// flush
+			entityManager.flush();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
