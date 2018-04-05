@@ -15,11 +15,16 @@ will be able to see the submitted resumes and then providing the criteria the ap
 
 ## Features 
 + Upload file/ pdf/ picture and encrypt and decrypt files to the server 
-+ Database migration 
++ Database: MySQL 
++ Authentication (with email verification after register)
 + Audit trails and logging using AOP
 + i18n (language : EN - FIN)
 + Email transaction services
 + Validation (JSR 303)
++ MultipartFile interface - upload files - Encrypt and decrypt stored file
+    + Upload single and multiple docs to the local repository or file system using the core IO streams
+    + Upload docs to FTP server 
+    + Upload docs with encrytion and decrytion for added security 
 
 
 ### Installing and Running the application
