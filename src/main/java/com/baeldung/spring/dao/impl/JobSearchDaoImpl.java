@@ -31,6 +31,7 @@ public class JobSearchDaoImpl {
         } catch (HibernateException e) {
             sessionFactory.getCurrentSession().getTransaction().rollback();
             e.printStackTrace();
+            return null;
 
         }
 
@@ -55,18 +56,22 @@ public class JobSearchDaoImpl {
             for(Object[] row : rows){
 
                 JobPosting jobPosting = new JobPosting();
-                jobPosting.setjobId(Long.parseLong(row[0].toString());
+//                jobPosting.setjobId(Long.parseLong(row[0].toString());
                 jobPosting.setTitle(row[1].toString());
                 jobPosting.setSalary(row[2].toString());
                 returnJobPostings.add(jobPosting);
-                
+
             }
+            return returnJobPostings;
+
 
         }catch(HibernateException e){
             // roll back
             sessionFactory.getCurrentSession().getTransaction().rollback();
             e.printStackTrace();
+            return null;
         }
+
     }
 
 
