@@ -32,7 +32,8 @@ Type http://localhost:8080/findjobs in your browser to open the application.
     + Compress the export data with gzip : `mysqldump -u root -p portal | gzip > db_backup.sql.gz`
     + Scale MySQL server : 
         + Mem cache 
-        + Indexing 
+        + Indexing: invisible index, descending index , check index usage, query optimizer, index hint, performance_schema, sys schema 
+        + Explain plan 
         + 
 + Hibernate 
     + Hibernate Statistics
