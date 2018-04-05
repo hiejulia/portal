@@ -16,6 +16,9 @@ import java.io.File;
 @Component
 public class EmailServiceImpl implements EmailService {
 
+
+
+
     // autowired : JavaMailSender // autowired : java mail sender
     @Autowired
     public JavaMailSender emailSender;
@@ -24,6 +27,7 @@ public class EmailServiceImpl implements EmailService {
     public void sendSimpleMessage(String to, String subject, String text) {// to subject, text
         try {
             // message
+
             SimpleMailMessage message = new SimpleMailMessage();
             message.setTo(to);
             message.setSubject(subject);
@@ -52,9 +56,10 @@ public class EmailServiceImpl implements EmailService {
                                           String text,
                                           String pathToAttachment) {
         try {
+            // create mime mesage
             MimeMessage message = emailSender.createMimeMessage();
             // pass 'true' to the constructor to create a multipart message
-            MimeMessageHelper helper = new MimeMessageHelper(message, true);
+            MimeMessageHelper helper = new MimeMessageHelper(message, true,"utf-8");
 
             helper.setTo(to);
             helper.setSubject(subject);

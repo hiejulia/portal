@@ -6,6 +6,7 @@ import java.sql.Date;
 import java.util.List;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -34,6 +35,7 @@ public class JobApplication {
 	private JobSeeker jobSeeker;
 	
 	@Column(name="resume")
+	@NotNull
 	private boolean resume;
 	
 	@Column(name="resumePath")

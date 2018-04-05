@@ -7,7 +7,9 @@ will be able to see the submitted resumes and then providing the criteria the ap
 
 ## Stack 
 + Spring MVC 
-+ Database migration with Liquibase 
++ Database : MySQL 
++ Apache Maven 
+ 
 
 
 
@@ -16,6 +18,8 @@ will be able to see the submitted resumes and then providing the criteria the ap
 + Database migration 
 + Audit trails and logging using AOP
 + i18n (language : EN - FIN)
++ Email transaction services
++ Validation (JSR 303)
 
 
 ### Installing and Running the application

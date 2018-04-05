@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
+import javax.validation.constraints.NotNull;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -25,6 +26,7 @@ import java.util.Set;
 public class MailController {
 
 	@Autowired
+	@NotNull
 	public EmailServiceImpl emailService;
 
 	@Value("${attachment.invoice}")
