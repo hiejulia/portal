@@ -7,7 +7,7 @@ Job portal for job seekers and companies, developed in Spring and Hibernate.
 + Spring framework
 + Spring MVC 
 + MySQL 
-+ Hibernate, C3PO Pool, Validator 
++ Hibernate, C3PO Pool, Validator, Transaction , Transaction Management  
 + 
  
 

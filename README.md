@@ -10,6 +10,7 @@ will be able to see the submitted resumes and then providing the criteria the ap
 + Database migration with Liquibase 
 
 
+
 ## Features 
 + Upload file/ pdf/ picture and encrypt and decrypt files to the server 
 + Database migration 
@@ -29,6 +30,10 @@ Type http://localhost:8080/findjobs in your browser to open the application.
 + MySQL server 
     + Export portal database : `mysqldump -u root -p portal > db_backup.sql`
     + Compress the export data with gzip : `mysqldump -u root -p portal | gzip > db_backup.sql.gz`
+    + Scale MySQL server : 
+        + Mem cache 
+        + Indexing 
+        + 
 + Hibernate 
     + Hibernate Statistics
     + Hibernate session : 1st level and 2nd level 

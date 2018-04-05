@@ -118,6 +118,13 @@
 			<version>1.16.16</version>
 			<scope>provided</scope>
 		</dependency>
+		<!--ADD Hibernate Full text search-->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-search-orm</artifactId>
+			<version>5.6.0.Final</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
