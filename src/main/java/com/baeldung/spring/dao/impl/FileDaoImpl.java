@@ -40,5 +40,50 @@ public class FileDaoImpl implements FileDao {
         return entityManager.createQuery("select j from JobApplication j where id = :id join fetch j.file ").setParameter("id",applicationId).getResultList();
     }
 
+    // delete file
+    public static boolean DeletePhoto(int photoId) throws HibernateException {
+        Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+        boolean isSuccessful = false;
+        try {
+
+            UserPhotoEntity upEntity = null;
+
+            // Begin unit of work
+            session.beginTransaction();
+
+            String hql = "from UserPhotoEntity as up where up.photoId="
+                    + photoId;
+
+            Query query = session.createQuery(hql);
+
+            @SuppressWarnings({ "unchecked" })
+            List<UserPhotoEntity> queryResultList = query.list();
+
+            if (queryResultList.size() > 0) {
+                upEntity = queryResultList.get(0);
+            }
+
+            upEntity.setIsPublic(false);
+
+            session.saveOrUpdate(upEntity);
+
+            // End unit of work
+            session.getTransaction().commit();
+
+            isSuccessful = true;
+
+        } catch (HibernateException hex) {
+            logger.error(hex.toString());
+            HibernateUtil.getSessionFactory().getCurrentSession()
+                    .getTransaction().rollback();
+        } catch (Exception ex) {
+            logger.error(ex.toString());
+            HibernateUtil.getSessionFactory().getCurrentSession()
+                    .getTransaction().rollback();
+        }
+        return isSuccessful;
+    }
+
+
 
 }

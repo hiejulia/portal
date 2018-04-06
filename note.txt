@@ -1,0 +1,9 @@
+https://github.com/zorzis/spring_multivendor_rest_api_backend
+https://github.com/wberhe/Oak-yoga-studio-management-system
+Run it : https://github.com/nazrulaub30/Social-Networking-Web-Application
+
+
+
+
+Book need to learn before end the project
++ MySQL for the Internet of Things

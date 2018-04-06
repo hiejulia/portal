@@ -30,6 +30,10 @@ public class AdminDaoImpl {
         } catch (HibernateException e) {
             sessionFactory.getCurrentSession().getTransaction().rollback();
             e.printStackTrace();
+        } catch(Exception ex){
+//            logger.error(ex.toString());
+            sessionFactory.getCurrentSession().getTransaction().rollback();
+
         }
     }
 

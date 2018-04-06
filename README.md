@@ -9,8 +9,9 @@ will be able to see the submitted resumes and then providing the criteria the ap
 + Spring MVC 
 + Database : MySQL 
 + Apache Maven 
- 
-
++ Web Service  
++ Lombok 
++ Spring social security login 
 
 
 ## Features 
@@ -25,8 +26,9 @@ will be able to see the submitted resumes and then providing the criteria the ap
     + Upload single and multiple docs to the local repository or file system using the core IO streams
     + Upload docs to FTP server 
     + Upload docs with encrytion and decrytion for added security 
-
-
++ AOP : audit trails and logging using AOP 
++ Captcha plugin 
++ SendGrid to monitor email transaction
 ### Installing and Running the application
 
 Just run the Application.java.
@@ -49,6 +51,8 @@ Type http://localhost:8080/findjobs in your browser to open the application.
     + Hibernate session : 1st level and 2nd level 
         + 1st level cache 
         + 2nd level cacahe : with Redis 
+    + Hibernate Envars for entity revision auditing
+   
     + Hibernate optimize SQL queries 
         + FetchType
         + Session management
@@ -56,7 +60,8 @@ Type http://localhost:8080/findjobs in your browser to open the application.
         + Periodically flush and clear the Hibernate session
         + Lazy init(loading)
         + Indexing 
-
++ Spring Data JPA 
+    + JPA auditing 
 
 + Spring MVC 
     + Connection pooling : 

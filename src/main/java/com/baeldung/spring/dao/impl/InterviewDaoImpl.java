@@ -9,6 +9,8 @@
 	import javax.persistence.PersistenceContext;
 	import javax.persistence.Query;
 
+	import com.baeldung.spring.mail.EmailServiceImpl;
+	import org.springframework.beans.factory.annotation.Autowired;
 	import org.springframework.stereotype.Repository;
 	import org.springframework.stereotype.Service;
 	import org.springframework.transaction.annotation.Transactional;
@@ -29,6 +31,9 @@ import com.baeldung.spring.entity.JobPosting;
 		// entity manager
 		@PersistenceContext
 		private EntityManager entityManager;
+
+		@Autowired
+		private EmailServiceImpl emailService;
 
 		@Override
 		public Interview createInterview(int jobseekerid, String company, String location, String datetime, String flag) {
@@ -51,6 +56,11 @@ import com.baeldung.spring.entity.JobPosting;
 			Query query = entityManager.createQuery("UPDATE interview SET flag = true WHERE jobseekerid= :id");
 			query.setParameter("id", jobseekerid);
 			entityManager.merge(interview);
+			// send email when applicant accept the interview
+			emailService.sendMessageWithAttachment((interview.getJobseekerid() +""),"Invitation to interview",interview.getCompany()+interview.getFlag()+interview.getLocation(),interview.getDatetime());
+
+
+			// end send email when
 			return "updated";
 		}
 

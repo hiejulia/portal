@@ -19,6 +19,11 @@
             <param-value>com.baeldung.spring.config.DatabaseConfig</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
+        <!--multipart config-->
+        <!--<multipart-config>-->
+            <!--<max-file-size>104857600</max-file-size>-->
+            <!--<max-request-size>104857600</max-request-size>-->
+        <!--</multipart-config>-->
     </servlet>
 
     <servlet-mapping>
