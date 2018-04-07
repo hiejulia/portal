@@ -48,8 +48,24 @@ Type http://localhost:8080/findjobs in your browser to open the application.
         + Mem cache 
         + Indexing: invisible index, descending index , check index usage, query optimizer, index hint, performance_schema, sys schema 
         + Explain plan 
-        + 
+        + Evaludate query performance 
+        + Optimum database structure 
     + Dump some rows in table (of Portal database ) by import csv file data (location of csv files : ./scripts/csv/**.csv)
+    + Back up MySQL Portal database(using mysqldump tool )
+    + Configuration of MySQL server     
+        + Create a back up of the original config file 
+        + Adjust settings for InnoDB tables (mysqld.cnf)
+            +innodb_buffer_pool_size = 512M  # around 70% of total ram
+             innodb_log_file_size  = 64M
+             innodb_file_per_table = 1
+             innodb_log_buffer_size = 4M
+             + Set maximum connection : max_connections = 300
+             + Increase the tem table size : tmp_table_size = 32M
+             + Increase max_allowed_packet to increase the maximum packet size : max_allowed_packet = 32M
+             + Enable binary log for recovery and replication : og_bin = /var/log/mysql/mysql-bin.log
+    + MySQL performance tuning primer script : 
+        + Download the script : wget http://day32.com/MySQL/tuning-primer.sh
+        + `sh tuning-primer.sh`
 + Hibernate 
     + Hibernate Statistics
     + Hibernate session : 1st level and 2nd level 
