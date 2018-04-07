@@ -91,4 +91,6 @@ public class JobApplicationDaoImpl implements JobApplicationDao {
 		entityManager.merge(ja);// merge
 		return null;
 	}
+
+
 }
