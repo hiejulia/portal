@@ -17,7 +17,7 @@ will be able to see the submitted resumes and then providing the criteria the ap
 ## Features 
 + Upload file/ pdf/ picture and encrypt and decrypt files to the server 
 + Database: MySQL 
-+ Authentication (with email verification after register)
++ Authentication (with email verification after register) - and CSRF protection 
 + Audit trails and logging using AOP
 + i18n (language : EN - FIN)
 + Email transaction services
@@ -29,6 +29,9 @@ will be able to see the submitted resumes and then providing the criteria the ap
 + AOP : audit trails and logging using AOP 
 + Captcha plugin 
 + SendGrid to monitor email transaction
++ Display excel file 
++ Some views tech integration : Apache tiles, Freemaker, Velocity
++ Scheduler (sending notification to the company when there is job application ) 
 ### Installing and Running the application
 
 Just run the Application.java.

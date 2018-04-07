@@ -8,6 +8,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
+import org.hibernate.Criteria;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -114,5 +115,9 @@ public class CompanyDaoImpl implements CompanyDao {
 		List<?> querylist = query.getResultList();
 		return querylist;
 	}
+
+	// Find all companies
+
+
 
 }

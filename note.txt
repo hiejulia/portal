@@ -1,9 +1,19 @@
 https://github.com/zorzis/spring_multivendor_rest_api_backend
 https://github.com/wberhe/Oak-yoga-studio-management-system
+https://github.com/andidev/spring-bootstrap-enterprise
+
 Run it : https://github.com/nazrulaub30/Social-Networking-Web-Application
 
 
 
 
 Book need to learn before end the project
+MySQL
 + MySQL for the Internet of Things
++ MySQL 8 cookbook: bay gio den luot practice ne
++ MySQL 8 for big data : dang check
+
+Spring MVC
+
+
+Hibernate

@@ -22,6 +22,7 @@ import javax.persistence.Query;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.tomcat.util.http.fileupload.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -295,6 +296,14 @@ public class JobApplicationController {
 			jobIdList.add(jobId);
 		}
 		return jobIdList;
+	}
+
+	// Download resume
+	@RequestMapping(value = "/cv/download", method = RequestMethod.GET)
+	public void getImageAsByteArray(HttpServletResponse response) throws IOException {
+		InputStream in = servletContext.getResourceAsStream("/WEB-INF/images/image-example.jpg");
+		response.setContentType(MediaType.IMAGE_JPEG_VALUE);
+		IOUtils.copy(in, response.getOutputStream());
 	}
 
 }
