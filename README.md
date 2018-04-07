@@ -49,6 +49,7 @@ Type http://localhost:8080/findjobs in your browser to open the application.
         + Indexing: invisible index, descending index , check index usage, query optimizer, index hint, performance_schema, sys schema 
         + Explain plan 
         + 
+    + Dump some rows in table (of Portal database ) by import csv file data (location of csv files : ./scripts/csv/**.csv)
 + Hibernate 
     + Hibernate Statistics
     + Hibernate session : 1st level and 2nd level 

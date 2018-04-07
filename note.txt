@@ -9,9 +9,11 @@ Run it : https://github.com/nazrulaub30/Social-Networking-Web-Application
 
 Book need to learn before end the project
 MySQL
-+ MySQL for the Internet of Things
++ MySQL for the Internet of Things : dag check
++ MySQL 8 administrator's guide
 + MySQL 8 cookbook: bay gio den luot practice ne
 + MySQL 8 for big data : dang check
++
 
 Spring MVC
 

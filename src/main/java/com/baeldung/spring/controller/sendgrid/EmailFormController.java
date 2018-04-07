@@ -26,6 +26,7 @@ import com.octo.captcha.service.image.ImageCaptchaService;
 @RequestMapping("/portal/email/sendgrid")
 public class EmailFormController {
 
+    // Image
     @Resource(name = "imageCaptchaService")
     private ImageCaptchaService imageCaptchaService;
 
