@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d56a1579-25a6-4f99-9049-6d5ee7022a58" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/baeldung/spring/entity/data/CfsFeedback.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/baeldung/spring/entity/data/CfsTopic.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/baeldung/spring/controller/sendgrid/EmailFormController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/baeldung/spring/dao/FeedbackDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/baeldung/spring/dao/TopicDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/baeldung/spring/dao/impl/FeedbackDaoImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/baeldung/spring/dao/impl/TopicDaoImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/baeldung/spring/sendgrid/EmailService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/baeldung/spring/sendgrid/EmailServiceImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_octo_captcha_jcaptcha_2_0_alpha_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_octo_captcha_jcaptcha_api_1_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/jobboard_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/jobboard_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jobboard.iml" afterPath="$PROJECT_DIR$/jobboard.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,87 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BotModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/botcaptcha/BotModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="48" lean-forward="false" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
-              <folding>
-                <element signature="e#290#291#0" expanded="true" />
-                <element signature="e#328#329#0" expanded="true" />
-                <element signature="e#393#394#0" expanded="true" />
-                <element signature="e#447#448#0" expanded="true" />
-                <element signature="e#492#493#0" expanded="true" />
-                <element signature="e#533#534#0" expanded="true" />
-                <element signature="e#601#602#0" expanded="true" />
-                <element signature="e#661#662#0" expanded="true" />
-                <element signature="e#708#709#0" expanded="true" />
-                <element signature="e#751#752#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApplicantForum.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/entity/ApplicantForum.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="147" column="29" lean-forward="true" selection-start-line="147" selection-start-column="29" selection-end-line="147" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CFSJCaptchaEngine.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/jcaptcha/CFSJCaptchaEngine.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1346#1378#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Company.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/entity/Company.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmailFeedback.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/entity/form/EmailFeedback.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="42" lean-forward="false" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CfsTopic.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/entity/data/CfsTopic.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="334">
-              <caret line="26" column="40" lean-forward="true" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+              <caret line="26" column="40" lean-forward="false" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1185#1198#0" expanded="true" />
@@ -117,7 +49,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CfsFeedback.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CfsFeedback.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/entity/data/CfsFeedback.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="620">
@@ -129,21 +61,100 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FeedbackForm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/entity/form/FeedbackForm.java">
+      <file leaf-file-name="TopicDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/dao/TopicDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="57" lean-forward="false" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+            <state relative-caret-position="150">
+              <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TopicDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/dao/impl/TopicDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="67" column="18" lean-forward="false" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#645#646#0" expanded="true" />
+                <element signature="e#682#683#0" expanded="true" />
+                <element signature="e#750#751#0" expanded="true" />
+                <element signature="e#802#803#0" expanded="true" />
+                <element signature="e#867#897#0" expanded="true" />
+                <element signature="e#1169#1199#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FeedbackDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/dao/impl/FeedbackDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="151">
+              <caret line="77" column="26" lean-forward="false" selection-start-line="77" selection-start-column="26" selection-end-line="77" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#808#809#0" expanded="true" />
+                <element signature="e#860#861#0" expanded="true" />
+                <element signature="e#940#970#0" expanded="true" />
+                <element signature="e#3206#3236#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmailService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/sendgrid/EmailService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TopicForm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/entity/form/TopicForm.java">
+      <file leaf-file-name="EmailServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/sendgrid/EmailServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="50" lean-forward="false" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+            <state relative-caret-position="16">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#766#782#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmailFormController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/controller/sendgrid/EmailFormController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="62" lean-forward="true" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="189" column="20" lean-forward="true" selection-start-line="189" selection-start-column="20" selection-end-line="189" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FeedbackDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/dao/FeedbackDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -172,13 +183,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/baeldung/spring/dao/impl/InterviewDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/ehcache.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/baeldung/spring/util/PasswordEncodingGen.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/baeldung/spring/aspect/LoggingAspect.java" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/main/java/com/baeldung/spring/util/CustomTimeService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/baeldung/spring/scheduler/MyScheduler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/baeldung/spring/service/AlertService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/baeldung/spring/service/impl/AlertServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/baeldung/spring/scheduler/JobPostingScheduling.java" />
@@ -217,12 +221,19 @@
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/baeldung/spring/botcaptcha/BotModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/baeldung/spring/jcaptcha/CFSJCaptchaEngine.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/baeldung/spring/entity/form/TopicForm.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/baeldung/spring/entity/form/FeedbackForm.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/baeldung/spring/entity/form/EmailFeedback.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/baeldung/spring/entity/data/CfsTopic.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/baeldung/spring/entity/data/CfsFeedback.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baeldung/spring/dao/FeedbackDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baeldung/spring/dao/TopicDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baeldung/spring/dao/impl/TopicDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baeldung/spring/dao/impl/FeedbackDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baeldung/spring/sendgrid/EmailService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baeldung/spring/sendgrid/EmailServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baeldung/spring/controller/sendgrid/EmailFormController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -339,6 +350,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="sendgrid" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jobboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -433,6 +454,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="sendgrid" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jobboard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -486,7 +516,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="pom.&#9;FILE&#9;file:///Users/hien/Desktop/sp/project/portal/pom.xml&#10;views.&#9;FILE&#9;file:///Users/hien/Desktop/sp/project/portal/src/main/resources/views.properties&#10;note&#9;FILE&#9;file:///Users/hien/Desktop/sp/project/portal/note.txt&#10;rea&#9;FILE&#9;file:///Users/hien/Desktop/sp/project/portal/README.md&#10;reame&#9;PSI&#9;JAVA://org.mockito.internal.invocation.realmethod.RealMethod&#10;readme&#9;FILE&#9;file:///Users/hien/Desktop/sp/project/portal/README.md&#10;com&#9;FILE&#9;file:///Users/hien/Desktop/sp/project/portal/src/main/java/com/baeldung/spring/dao/impl/CompanySearchDaoImpl.java&#10;compa&#9;PSI&#9;JAVA://com.baeldung.spring.entity.Company&#10;reamd&#9;FILE&#9;file:///Users/hien/Desktop/sp/project/portal/README.md&#10;pom.xml&#9;FILE&#9;file:///Users/hien/Desktop/sp/project/portal/pom.xml" />
+    <property name="SearchEverywhereHistoryKey" value="pom&#9;FILE&#9;file:///Users/hien/Desktop/sp/project/portal/pom.xml&#10;feed&#9;FILE&#9;file:///Users/hien/Desktop/sp/project/portal/src/main/java/com/baeldung/spring/dao/impl/FeedbackDaoImpl.java&#10;topicd&#9;FILE&#9;file:///Users/hien/Desktop/sp/project/portal/src/main/java/com/baeldung/spring/dao/impl/TopicDaoImpl.java&#10;pom.&#9;FILE&#9;file:///Users/hien/Desktop/sp/project/portal/pom.xml&#10;views.&#9;FILE&#9;file:///Users/hien/Desktop/sp/project/portal/src/main/resources/views.properties&#10;note&#9;FILE&#9;file:///Users/hien/Desktop/sp/project/portal/note.txt&#10;rea&#9;FILE&#9;file:///Users/hien/Desktop/sp/project/portal/README.md&#10;reame&#9;PSI&#9;JAVA://org.mockito.internal.invocation.realmethod.RealMethod&#10;readme&#9;FILE&#9;file:///Users/hien/Desktop/sp/project/portal/README.md&#10;com&#9;FILE&#9;file:///Users/hien/Desktop/sp/project/portal/src/main/java/com/baeldung/spring/dao/impl/CompanySearchDaoImpl.java&#10;compa&#9;PSI&#9;JAVA://com.baeldung.spring.entity.Company&#10;reamd&#9;FILE&#9;file:///Users/hien/Desktop/sp/project/portal/README.md&#10;pom.xml&#9;FILE&#9;file:///Users/hien/Desktop/sp/project/portal/pom.xml" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -609,12 +639,12 @@
       <workItem from="1522959314171" duration="227000" />
       <workItem from="1522996223541" duration="3993000" />
       <workItem from="1523037513596" duration="159000" />
-      <workItem from="1523038350437" duration="7039000" />
+      <workItem from="1523038350437" duration="8426000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11418000" />
+    <option name="totallyTimeSpent" value="12805000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1024" y="0" width="1280" height="800" extended-state="0" />
@@ -665,85 +695,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/util/CustomTimeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="48" lean-forward="false" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#440#441#0" expanded="false" />
-            <element signature="e#467#468#0" expanded="false" />
-            <element signature="e#505#506#0" expanded="false" />
-            <element signature="e#537#538#0" expanded="false" />
-            <element signature="e#583#584#0" expanded="false" />
-            <element signature="e#641#642#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/scheduler/MyScheduler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/service/AlertService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/service/impl/AlertServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="40" column="48" lean-forward="false" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4087#4111#0" expanded="true" />
-            <element signature="e#5309#5310#0" expanded="true" />
-            <element signature="e#5368#5369#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/scheduler/JobPostingScheduling.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="47" column="5" lean-forward="false" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/config/ApacheTilesViewConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/config/HibernateConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="32" column="77" lean-forward="false" selection-start-line="32" selection-start-column="77" selection-end-line="32" selection-end-column="77" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/config/SecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="515">
@@ -1088,14 +1039,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="147" column="29" lean-forward="true" selection-start-line="147" selection-start-column="29" selection-end-line="147" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/jcaptcha/CFSJCaptchaEngine.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -1154,7 +1097,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/entity/data/CfsTopic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
-          <caret line="26" column="40" lean-forward="true" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+          <caret line="26" column="40" lean-forward="false" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1185#1198#0" expanded="true" />
@@ -1169,6 +1112,91 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/dao/FeedbackDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/dao/TopicDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/dao/impl/TopicDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="67" column="18" lean-forward="false" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#645#646#0" expanded="true" />
+            <element signature="e#682#683#0" expanded="true" />
+            <element signature="e#750#751#0" expanded="true" />
+            <element signature="e#802#803#0" expanded="true" />
+            <element signature="e#867#897#0" expanded="true" />
+            <element signature="e#1169#1199#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/dao/impl/FeedbackDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="77" column="26" lean-forward="false" selection-start-line="77" selection-start-column="26" selection-end-line="77" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
+            <element signature="e#860#861#0" expanded="true" />
+            <element signature="e#940#970#0" expanded="true" />
+            <element signature="e#3206#3236#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/sendgrid/EmailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/sendgrid/EmailServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#766#782#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baeldung/spring/controller/sendgrid/EmailFormController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="62" lean-forward="true" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="189" column="20" lean-forward="true" selection-start-line="189" selection-start-column="20" selection-end-line="189" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
