@@ -66,6 +66,13 @@ Type http://localhost:8080/findjobs in your browser to open the application.
     + MySQL performance tuning primer script : 
         + Download the script : wget http://day32.com/MySQL/tuning-primer.sh
         + `sh tuning-primer.sh`
+        
+    + Create MySQL replicas for scaling and high availability
+    + Find slow queries : add log-long-format and log-slow-query = /var/log/slow-queries.log to /etc/my.cnf file 
+    + `OPTIMIZE TABLE tablename` 
+    + `SHOW STATUS LIKE 'qcache%';`
+    
+     
 + Hibernate 
     + Hibernate Statistics
     + Hibernate session : 1st level and 2nd level 
