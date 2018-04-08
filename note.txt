@@ -9,7 +9,7 @@ Run it : https://github.com/nazrulaub30/Social-Networking-Web-Application
 
 Book need to learn before end the project
 MySQL
-+ MySQL for the Internet of Things : dag check
++ MySQL for the Internet of Things : bh den luot practice ne 
 + MySQL 8 administrator's guide : dag check
 + MySQL 8 cookbook: bay gio den luot practice ne
 + MySQL 8 for big data : bay gio den luot practice ne

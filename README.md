@@ -102,6 +102,13 @@ Type http://localhost:8080/findjobs in your browser to open the application.
             + Check slave status `show slave status\G`
         + Master- master
     + MySQL load balancing : with HAProxy server
+    + Check MySQL server status `sudo service mysql status`
+    + Check MySQL logs at `/var/log/mysql.log`
+    + Start the server in interactive mode : ` sudo /usr/sbin/mysqld --user=mysql --verbose`
+    + Optimize MySQL queries performance :  
+        + set global log_slow_queries = 1;
+        + Using `explain` to view the query execution plan 
+        + Using `.. procedure analyse()`
      
 + Hibernate 
     + Hibernate Statistics
