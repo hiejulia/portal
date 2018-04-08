@@ -71,7 +71,37 @@ Type http://localhost:8080/findjobs in your browser to open the application.
     + Find slow queries : add log-long-format and log-slow-query = /var/log/slow-queries.log to /etc/my.cnf file 
     + `OPTIMIZE TABLE tablename` 
     + `SHOW STATUS LIKE 'qcache%';`
-    
+    + Create MySQL replicas for scaling and high availability `grant replication slave on *.* to 'slave_user'@'10.0.2.62' identified by 'password';`
+        + Master- slave 
+            + Create replication user on the Master server 
+            + Edit MySQL config file on the Master server :
+                + sudo nano /etc/mysql/my.cnf
+                  [mysqld]
+                  bind-address = 10.0.2.61    # your master server ip
+                  server-id = 1
+                  log-bin = mysql-bin
+                  binlog-ignore-db = “mysql”
+            + Restart MySQL on the Master server 
+            + Export MySQL database on the Master server : open MySQL connection and lock the database to prevent any updates
+            + Read the Master status 
+            + export the database  and unlock the table after database dump complete 
+            + Transfer the back up to the Slave server with any secure ` scp master_backup.sql ubuntu@10.0.2.62:/home/ubuntu/master_backup.sql`
+            + Edit the config file on the Slave server :
+                sudo nano /etc/mysql/my.cnf
+                [mysqld]
+                bind-address = 10.0.2.62
+                server-id = 2
+                relay_log=relay-log
+            + Restart the MySQL server 
+            + Set the master config on the slave 
+                   change master to
+                  master_host=’10.0.2.61’, master_user=’slave_user’,
+                  master_password=’password’, master_log_file=’mysql-bin.000010’,
+                  master_log_pos=2214;
+            + Start the slave 
+            + Check slave status `show slave status\G`
+        + Master- master
+    + MySQL load balancing : with HAProxy server
      
 + Hibernate 
     + Hibernate Statistics
